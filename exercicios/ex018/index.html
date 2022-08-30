@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em Css</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas  
+        cm , mm, in, px, pt pc    
+        */
+
+            /*Medidas Relativas
+        em, ex , rem, vw, vh, %  
+        16 px geralmente = 1 em 
+        */
+            font-size: 1em;
+            font-weight: lighter;
+            font-style: italic;
+        }
+       
+        h2 {
+            font-weight: normal;
+            /* serve para tirar o negrito dos títulos */
+        }
+
+        h2#padrao {
+            font-family: Arial, Helvetica, sans-serif;
+            /* O navegador vai tentar carregar a primeira, se não funcionar, passa pra próxima */
+        }
+
+        h2#google {
+            font-family: 'Pacifico', cursive;
+            /* A importação dessa fonte aconteceu na linha 8 */
+        }
+
+        h2#local {
+            font-family: 'Minha Fonte', sans-serif;
+            /* Fonte local importada da linha 9 até 12 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Trabalhando com fontes</h1>
+
+    <p>Lorem ipsum dolor sit amet
+        consectetur adipisicing elit.
+        Nam ducimus quas aliquid accusamus, animi nisi saepe, error blanditiis voluptatum natus,
+        culpa quidem? Unde velit at suscipit reprehenderit ab eos quis.</p>
+    <p>Lorem ipsum dolor sit amet
+        consectetur adipisicing elit.
+        Nam ducimus quas aliquid accusamus, animi nisi saepe, error blanditiis voluptatum natus,
+        culpa quidem? Unde velit at suscipit reprehenderit ab eos quis.</p>
+
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet
+        consectetur adipisicing elit.
+        Nam ducimus quas aliquid accusamus, animi nisi saepe, error blanditiis voluptatum natus,
+        culpa quidem? Unde velit at suscipit reprehenderit ab eos quis.</p>
+
+    <h2 id="padrao">Podemos configurar fontes padrão do sistema</h2>
+    <h2 id="google">Ou então usar uma fonte do Google Fonts</h2>
+    <h2 id="local">Ou ainda usar um arquivo local de fontes</h2>
+
+</body>
+
+</html>
